@@ -48,7 +48,7 @@ class Ping1DNode(Node):
         # print("Press CTRL+C to exit")
         
         # Set the speed of sound used for distance calculations
-        self.myPing.set_speed_of_sound(self, speed_of_sound=speed_of_sound_mms) # ~1,500,000 mm/s for water 350,000mm/s for air
+        # self.myPing.set_speed_of_sound(self, speed_of_sound=speed_of_sound_mms) # ~1,500,000 mm/s for water 350,000mm/s for air
         data_sof = self.myPing.get_speed_of_sound()
         print("Using Speed of Sound = %f m/s" % (float(data_sof["speed_of_sound"])/1000))
         print("------------------------------------")
